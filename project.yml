@@ -1,0 +1,30 @@
+name: MemoryLens
+options:
+  bundleIdPrefix: com.memorylens
+  deploymentTarget:
+    macOS: "13.0"
+  xcodeVersion: "15.0"
+  minimumXcodeGenVersion: "2.30"
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGN_STYLE: Manual
+    MACOSX_DEPLOYMENT_TARGET: "13.0"
+
+targets:
+  MemoryLens:
+    type: application
+    platform: macOS
+    sources:
+      - MemoryLens
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.memorylens.MemoryLens
+        CODE_SIGN_ENTITLEMENTS: MemoryLens/MemoryLens.entitlements
+        INFOPLIST_GENERATION_MODE: GeneratedFile
+        PRODUCT_NAME: MemoryLens
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: YES

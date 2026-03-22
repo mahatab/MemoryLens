@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Background gradient: deep blue to purple -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a4e;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2d1b69;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4a1a8a;stop-opacity:1" />
+    </linearGradient>
+    <!-- Chip body gradient -->
+    <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a5e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e1e4a;stop-opacity:1" />
+    </linearGradient>
+    <!-- Gold pin gradient -->
+    <linearGradient id="pinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#daa520;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b8860b;stop-opacity:1" />
+    </linearGradient>
+    <!-- Lens glass gradient -->
+    <radialGradient id="lensGrad" cx="40%" cy="35%" r="55%">
+      <stop offset="0%" style="stop-color:#a8d8ff;stop-opacity:0.5" />
+      <stop offset="40%" style="stop-color:#60b0ff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#3090ff;stop-opacity:0.15" />
+    </radialGradient>
+    <!-- Lens ring gradient -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c0c0c0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#e8e8e8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#a0a0a0;stop-opacity:1" />
+    </linearGradient>
+    <!-- Handle gradient -->
+    <linearGradient id="handleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#b0b0b0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#707070;stop-opacity:1" />
+    </linearGradient>
+    <!-- Memory cell glow -->
+    <linearGradient id="cellGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffaa;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#00cc88;stop-opacity:0.7" />
+    </linearGradient>
+    <!-- Chip border glow -->
+    <filter id="chipGlow">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <!-- Lens highlight -->
+    <filter id="lensGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <!-- Drop shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="4" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Rounded square background -->
+  <rect x="0" y="0" width="1024" height="1024" rx="220" ry="220" fill="url(#bgGrad)"/>
+
+  <!-- Subtle grid pattern on background -->
+  <g opacity="0.06">
+    <line x1="0" y1="200" x2="1024" y2="200" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="400" x2="1024" y2="400" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="600" x2="1024" y2="600" stroke="#fff" stroke-width="1"/>
+    <line x1="0" y1="800" x2="1024" y2="800" stroke="#fff" stroke-width="1"/>
+    <line x1="200" y1="0" x2="200" y2="1024" stroke="#fff" stroke-width="1"/>
+    <line x1="400" y1="0" x2="400" y2="1024" stroke="#fff" stroke-width="1"/>
+    <line x1="600" y1="0" x2="600" y2="1024" stroke="#fff" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="1024" stroke="#fff" stroke-width="1"/>
+  </g>
+
+  <!-- ===== RAM CHIP ===== -->
+  <g filter="url(#shadow)" transform="translate(-60, 30)">
+    <!-- Chip body -->
+    <rect x="220" y="280" width="360" height="440" rx="20" ry="20" fill="url(#chipGrad)" stroke="#4a4a8a" stroke-width="3"/>
+
+    <!-- Chip inner border -->
+    <rect x="240" y="300" width="320" height="400" rx="12" ry="12" fill="none" stroke="#5a5a9a" stroke-width="1.5" opacity="0.5"/>
+
+    <!-- Left pins -->
+    <rect x="190" y="330" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="190" y="370" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="190" y="410" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="190" y="450" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="190" y="490" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="190" y="530" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="190" y="570" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="190" y="610" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="190" y="650" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+
+    <!-- Right pins -->
+    <rect x="570" y="330" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="570" y="370" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="570" y="410" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="570" y="450" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="570" y="490" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="570" y="530" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="570" y="570" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="570" y="610" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+    <rect x="570" y="650" width="40" height="12" rx="2" fill="url(#pinGrad)"/>
+
+    <!-- Top pins -->
+    <rect x="280" y="250" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+    <rect x="320" y="250" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+    <rect x="360" y="250" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+    <rect x="400" y="250" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+    <rect x="440" y="250" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+    <rect x="480" y="250" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+    <rect x="520" y="250" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+
+    <!-- Bottom pins -->
+    <rect x="280" y="710" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+    <rect x="320" y="710" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+    <rect x="360" y="710" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+    <rect x="400" y="710" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+    <rect x="440" y="710" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+    <rect x="480" y="710" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+    <rect x="520" y="710" width="12" height="40" rx="2" fill="url(#pinGrad)"/>
+
+    <!-- Memory cells grid (4x6) -->
+    <g>
+      <!-- Row 1 -->
+      <rect x="265" y="325" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.8"/>
+      <rect x="330" y="325" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.5"/>
+      <rect x="395" y="325" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.9"/>
+      <rect x="460" y="325" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.6"/>
+      <!-- Row 2 -->
+      <rect x="265" y="380" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.7"/>
+      <rect x="330" y="380" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.9"/>
+      <rect x="395" y="380" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.4"/>
+      <rect x="460" y="380" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.8"/>
+      <!-- Row 3 -->
+      <rect x="265" y="435" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.6"/>
+      <rect x="330" y="435" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.3"/>
+      <rect x="395" y="435" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.8"/>
+      <rect x="460" y="435" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.5"/>
+      <!-- Row 4 -->
+      <rect x="265" y="490" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.9"/>
+      <rect x="330" y="490" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.7"/>
+      <rect x="395" y="490" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.5"/>
+      <rect x="460" y="490" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.8"/>
+      <!-- Row 5 -->
+      <rect x="265" y="545" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.4"/>
+      <rect x="330" y="545" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.8"/>
+      <rect x="395" y="545" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.6"/>
+      <rect x="460" y="545" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.9"/>
+      <!-- Row 6 -->
+      <rect x="265" y="600" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.7"/>
+      <rect x="330" y="600" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.5"/>
+      <rect x="395" y="600" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.9"/>
+      <rect x="460" y="600" width="55" height="40" rx="4" fill="url(#cellGlow)" opacity="0.4"/>
+    </g>
+
+    <!-- Chip circuit traces -->
+    <g stroke="#00ffaa" stroke-width="1" opacity="0.15">
+      <line x1="265" y1="660" x2="520" y2="660"/>
+      <line x1="265" y1="670" x2="520" y2="670"/>
+      <line x1="265" y1="680" x2="520" y2="680"/>
+      <line x1="265" y1="690" x2="520" y2="690"/>
+    </g>
+
+    <!-- Chip label -->
+    <text x="400" y="710" text-anchor="middle" font-family="SF Mono, Menlo, monospace" font-size="18" fill="#6a6aaa" opacity="0.6">MEM-64</text>
+  </g>
+
+  <!-- ===== MAGNIFYING GLASS ===== -->
+  <g filter="url(#shadow)" transform="translate(30, -10)">
+    <!-- Handle -->
+    <line x1="720" y1="700" x2="840" y2="820" stroke="url(#handleGrad)" stroke-width="42" stroke-linecap="round"/>
+    <line x1="720" y1="700" x2="840" y2="820" stroke="#d0d0d0" stroke-width="36" stroke-linecap="round"/>
+
+    <!-- Lens ring (outer) -->
+    <circle cx="610" cy="530" r="175" fill="none" stroke="url(#ringGrad)" stroke-width="28"/>
+
+    <!-- Lens glass -->
+    <circle cx="610" cy="530" r="160" fill="url(#lensGrad)"/>
+
+    <!-- Glass highlight / refraction -->
+    <ellipse cx="565" cy="475" rx="70" ry="45" fill="#ffffff" opacity="0.15" transform="rotate(-25, 565, 475)"/>
+
+    <!-- Data visible through lens (magnified memory cells) -->
+    <g clip-path="url(#lensClip)" opacity="0.6">
+      <rect x="510" y="440" width="60" height="45" rx="6" fill="#00ffaa" opacity="0.7"/>
+      <rect x="580" y="440" width="60" height="45" rx="6" fill="#ff6b6b" opacity="0.7"/>
+      <rect x="650" y="440" width="60" height="45" rx="6" fill="#4dabf7" opacity="0.7"/>
+      <rect x="510" y="500" width="60" height="45" rx="6" fill="#ffd43b" opacity="0.7"/>
+      <rect x="580" y="500" width="60" height="45" rx="6" fill="#b197fc" opacity="0.7"/>
+      <rect x="650" y="500" width="60" height="45" rx="6" fill="#69db7c" opacity="0.7"/>
+      <rect x="510" y="560" width="60" height="45" rx="6" fill="#4dabf7" opacity="0.7"/>
+      <rect x="580" y="560" width="60" height="45" rx="6" fill="#00ffaa" opacity="0.7"/>
+      <rect x="650" y="560" width="60" height="45" rx="6" fill="#ff6b6b" opacity="0.7"/>
+    </g>
+
+    <!-- Clip path for lens content -->
+    <clipPath id="lensClip">
+      <circle cx="610" cy="530" r="155"/>
+    </clipPath>
+
+    <!-- Tiny hex addresses visible in lens -->
+    <g clip-path="url(#lensClip)">
+      <text x="525" y="435" font-family="SF Mono, Menlo, monospace" font-size="10" fill="#ffffff" opacity="0.4">0x7FF8</text>
+      <text x="595" y="435" font-family="SF Mono, Menlo, monospace" font-size="10" fill="#ffffff" opacity="0.4">0xA010</text>
+      <text x="665" y="435" font-family="SF Mono, Menlo, monospace" font-size="10" fill="#ffffff" opacity="0.4">0xB200</text>
+    </g>
+
+    <!-- Lens edge highlight -->
+    <circle cx="610" cy="530" r="160" fill="none" stroke="#ffffff" stroke-width="1.5" opacity="0.2"/>
+  </g>
+</svg>
