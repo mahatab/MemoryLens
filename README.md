@@ -47,6 +47,13 @@ Key stats include: page faults, page ins/outs, COW faults, reactivations, compre
 
 ---
 
+### Timeline
+Live stacked area chart recording memory composition over time at 2-second intervals (up to 5 minutes of history). Pause, resume, and clear. Great for watching what happens to memory when you open or close applications.
+
+![Memory Timeline](images/memorylens3.png)
+
+---
+
 ### Process Memory
 Sortable table of all running processes with PID, name, RSS (resident set size), and virtual memory size. Click any column header to re-sort.
 
@@ -77,13 +84,6 @@ Capture memory state before and after an action to see exactly what changed.
 4. See a side-by-side bar chart and delta table showing changes across all memory categories
 
 Color-coded deltas: **green** = improvement, **red** = increased pressure.
-
----
-
-### Timeline
-Live stacked area chart recording memory composition over time at 2-second intervals (up to 5 minutes of history). Pause, resume, and clear. Great for watching what happens to memory when you open or close applications.
-
-![Memory Timeline](images/memorylens3.png)
 
 ---
 
