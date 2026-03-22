@@ -5,8 +5,8 @@
 <h1 align="center">MemoryLens</h1>
 
 <p align="center">
-  <strong>A native macOS app for exploring and understanding memory internals</strong><br>
-  Built for learning, not just monitoring.
+  <strong>A native macOS app for exploring memory internals — with Windows comparisons built in</strong><br>
+  Built by a Windows developer learning macOS, for anyone making the same journey.
 </p>
 
 <p align="center">
@@ -18,9 +18,9 @@
 
 ---
 
-MemoryLens exposes the same Mach kernel APIs that power Activity Monitor and `vm_stat`, but wraps them in an educational interface with contextual explanations, Windows comparisons, and interactive tools for experimentation.
+Coming from Windows, I had questions — what's "Wired" memory? Why does "Free" RAM look so low? How do macOS concepts map to what I already know? MemoryLens is the app I wished existed when I started exploring macOS internals.
 
-Designed for people who want to understand *how* memory works, not just *how much* is used.
+It exposes the same Mach kernel APIs that power Activity Monitor and `vm_stat`, but wraps them in an educational interface where every concept is explained alongside its Windows equivalent — so you can map what you already know to how macOS does things.
 
 ---
 
