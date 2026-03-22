@@ -43,8 +43,6 @@ Dedicated view showing paging, swapping, and compression activity since boot. Ea
 
 ![Virtual Memory — Paging & Swap](images/memorylens2.png)
 
-![Virtual Memory — Compression Stats](images/memorylens3.png)
-
 Key stats include: page faults, page ins/outs, COW faults, reactivations, compression/decompression counts, swap ins/outs, and a live swap usage chart.
 
 ---
@@ -108,6 +106,8 @@ Every entry includes a macOS explanation, the **Windows equivalent** (mapped to 
 ## Timeline
 
 Live stacked area chart recording memory composition over time at 2-second intervals (up to 5 minutes of history). Pause, resume, and clear. Great for watching what happens to memory when you open or close applications.
+
+![Memory Timeline](images/memorylens3.png)
 
 ---
 
