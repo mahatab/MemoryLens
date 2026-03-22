@@ -20,7 +20,7 @@
 
 MemoryLens exposes the same Mach kernel APIs that power Activity Monitor and `vmstat`, but wraps them in an educational interface with contextual explanations, Windows comparisons, and interactive tools for experimentation.
 
-Think of it as **RAMMap for macOS**, designed for people who want to understand *how* memory works, not just *how much* is used.
+Designed for people who want to understand *how* memory works, not just *how much* is used.
 
 ---
 
@@ -33,7 +33,7 @@ Live physical RAM breakdown with a stacked bar chart, detailed stats table, and 
 
 Every memory category (Wired, Active, Inactive, Compressed, Purgeable, Free) has a blue **info button** that opens a popover explaining:
 - What it means on macOS
-- Its Windows equivalent (mapped to RAMMap / Task Manager concepts)
+- Its Windows equivalent (mapped to Task Manager concepts)
 - A deep-dive tip for further learning
 
 ---
@@ -101,7 +101,7 @@ A searchable, built-in reference covering 16 core memory concepts organized into
 | **System Memory** | Wired, Active, Inactive, Compressed, Purgeable, Free |
 | **Process Regions** | \_\_TEXT, \_\_DATA, Heap, Stack, Dynamic Libraries, Anonymous Memory, Protection Flags |
 
-Every entry includes a macOS explanation, the **Windows equivalent** (mapped to RAMMap, Task Manager, and perfmon), and a deep-dive note.
+Every entry includes a macOS explanation, the **Windows equivalent** (mapped to Task Manager and perfmon), and a deep-dive note.
 
 ---
 
@@ -137,7 +137,7 @@ Live stacked area chart recording memory composition over time at 2-second inter
 brew install xcodegen
 
 # Clone and build
-git clone https://github.com/yourusername/MemoryLens.git
+git clone https://github.com/mahatab/MemoryLens.git
 cd MemoryLens
 xcodegen generate
 xcodebuild -project MemoryLens.xcodeproj -scheme MemoryLens build
@@ -209,8 +209,7 @@ All APIs are called directly from Swift via `import Darwin` — no bridging head
 
 MemoryLens is designed to complement these resources:
 
-- **macOS**: `man vmstat`, `man vm_stat`, `man purge`, `man mach_vm_region`
-- **Windows comparison**: [Sysinternals RAMMap](https://learn.microsoft.com/en-us/sysinternals/downloads/rammap), [VMMap](https://learn.microsoft.com/en-us/sysinternals/downloads/vmmap)
+- **macOS**: `man vm_stat`, `man purge`, `man mach_vm_region`
 - **Concepts**: [Mac OS X Internals (Singh)](https://www.amazon.com/Mac-OS-Internals-Systems-Approach/dp/0321278542), [Windows Internals (Russinovich)](https://learn.microsoft.com/en-us/sysinternals/resources/windows-internals)
 
 ---
