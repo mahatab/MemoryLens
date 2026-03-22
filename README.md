@@ -18,7 +18,7 @@
 
 ---
 
-MemoryLens exposes the same Mach kernel APIs that power Activity Monitor and `vmstat`, but wraps them in an educational interface with contextual explanations, Windows comparisons, and interactive tools for experimentation.
+MemoryLens exposes the same Mach kernel APIs that power Activity Monitor and `vm_stat`, but wraps them in an educational interface with contextual explanations, Windows comparisons, and interactive tools for experimentation.
 
 Designed for people who want to understand *how* memory works, not just *how much* is used.
 
