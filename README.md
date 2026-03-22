@@ -80,6 +80,13 @@ Color-coded deltas: **green** = improvement, **red** = increased pressure.
 
 ---
 
+### Timeline
+Live stacked area chart recording memory composition over time at 2-second intervals (up to 5 minutes of history). Pause, resume, and clear. Great for watching what happens to memory when you open or close applications.
+
+![Memory Timeline](images/memorylens3.png)
+
+---
+
 ### Memory Flush
 Run the macOS `purge` command to flush inactive and purgeable memory, with before/after comparison.
 
@@ -100,14 +107,6 @@ A searchable, built-in reference covering 16 core memory concepts organized into
 | **Process Regions** | \_\_TEXT, \_\_DATA, Heap, Stack, Dynamic Libraries, Anonymous Memory, Protection Flags |
 
 Every entry includes a macOS explanation, the **Windows equivalent** (mapped to Task Manager and perfmon), and a deep-dive note.
-
----
-
-## Timeline
-
-Live stacked area chart recording memory composition over time at 2-second intervals (up to 5 minutes of history). Pause, resume, and clear. Great for watching what happens to memory when you open or close applications.
-
-![Memory Timeline](images/memorylens3.png)
 
 ---
 
